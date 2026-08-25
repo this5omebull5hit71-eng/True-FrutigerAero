@@ -33,12 +33,14 @@ hl.config({
             color        = 0xee1a1a1a,
         },
 
-        blur = {
-            enabled   = true,
-            size      = 3,
-            passes    = 1,
-            vibrancy  = 0.1696,
-        },
+    --    blur = {
+      --      enabled           = true,
+        --    size              = 8,
+         --   passes            = 3,
+          --  new_optimizations = true,
+          --  ignore_opacity    = true,
+        --    vibrancy          = 0.1696,
+     --   },
     },
 
     dwindle = {
@@ -73,7 +75,6 @@ hl.config({
         },
     },
 })
-
 
 hl.device({
     name        = "epic-mouse-v1",

@@ -1,3 +1,5 @@
 hl.on("hyprland.start", function ()
     hl.exec_cmd("waybar -c " .. os.getenv("HOME") .. "/True-Frutiger-Glass/waybar/config")
+    hl.exec_cmd("waywallen-layer-shell --socket " .. os.getenv("XDG_RUNTIME_DIR") .. "/waywallen/display.sock")
+    hl.exec_cmd("flatpak run org.waywallen.waywallen")
 end)

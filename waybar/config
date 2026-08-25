@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock", "backlight"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -27,3 +27,17 @@
         "format": "{:%H:%M - %d/%m}"
     }
 }
+
+"backlight": {
+    "device": "intel_backlight",
+    "format": "BRI {percent}%",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
+    "smooth-scrolling-threshold": 1
+"backlight": {
+    "device": "intel_backlight",
+    "format": "BRI {percent}%",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
+    "smooth-scrolling-threshold": 1
+}}
