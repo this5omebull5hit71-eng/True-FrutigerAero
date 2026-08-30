@@ -25,3 +25,12 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- 5. Forzar Wayland en navegadores (como Firefox o Chrome/Opera)
 hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.env("OZONE_PLATFORM", "wayland")
+
+-- 6. Configuración global de fuentes GTK / Qt
+hl.env("QT_FONT_FAMILY", "JetBrainsMono Nerd Font")
+hl.env("GDK_FONT_NAME", "JetBrainsMono Nerd Font 10")
+
+
+-- IDK LOOOOOOOOOOOL
+
+hl.env("QT_STYLE_OVERRIDE", "kvantum")

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------
--- REGLAS DE VENTANAS Y WORKSPACES
+-- REGLAS DE VENTANAS Y WORKSPACES (TRUE-FRUTIGER-GLASS)
 ----------------------------------------------------------------------------------------
 
 local suppressMaximizeRule = hl.window_rule({
@@ -26,4 +26,20 @@ hl.window_rule({
     match = { class = "hyprland-run" },
     move  = "20 monitor_h-120",
     float = true,
+})
+
+----------------------------------------------------------------------------------------
+-- REGLAS DE CRISTAL / BLUR (KITTY & DOLPHIN)
+----------------------------------------------------------------------------------------
+hl.config({
+    windowrulev2 = {
+        -- Reglas para la terminal Kitty
+        "blur, class:^(kitty)$",
+        "ignorezero, class:^(kitty)$",
+        
+        -- Reglas para el gestor de archivos Dolphin (Blur + Opacidad de Cristal)
+        "blur, class:^(org.kde.dolphin)$",
+        "ignorezero, class:^(org.kde.dolphin)$",
+        "opacity 0.80 0.70, class:^(org.kde.dolphin)$"
+    }
 })
