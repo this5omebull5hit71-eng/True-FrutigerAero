@@ -52,3 +52,18 @@ hl.config({
         "ignorezero, rofi"
     }
 })
+
+
+---------- Dunst ----------
+
+hl.config({
+    layerrule = {
+        -- Reglas para Rofi (ya las tenías)
+        "blur, rofi",
+        "ignorezero, rofi",
+
+        -- Reglas para Dunst
+        "blur, dunst",
+        "ignorezero, dunst"
+    }
+})

@@ -1,0 +1,41 @@
+[global]
+font = JetBrainsMono Nerd Font 11
+markup = full
+format = "<b>%s</b>\n%b"
+sort = yes
+indicate_hidden = yes
+alignment = left
+word_wrap = yes
+width = 320
+height = 120
+origin = top-right
+offset = 20x20
+padding = 15
+horizontal_padding = 15
+frame_width = 2
+corner_radius = 12
+icon_position = left
+max_icon_size = 64
+
+# Base de cristal oscuro
+background = "#00000040"
+foreground = "#ffffff"
+separator_color = frame
+
+[urgency_low]
+background = "#00000040"
+foreground = "#ffffff"
+frame_color = "#33ccff"
+timeout = 5
+
+[urgency_normal]
+background = "#00000040"
+foreground = "#ffffff"
+frame_color = "#00ff99"
+timeout = 10
+
+[urgency_critical]
+background = "#99000060"
+foreground = "#ffffff"
+frame_color = "#ff3333"
+timeout = 0
