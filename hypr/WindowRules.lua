@@ -43,3 +43,12 @@ hl.config({
         "opacity 0.80 0.70, class:^(org.kde.dolphin)$"
     }
 })
+
+------ Rofi ------
+
+hl.config({
+    layerrule = {
+        "blur, rofi",
+        "ignorezero, rofi"
+    }
+})

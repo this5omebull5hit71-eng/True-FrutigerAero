@@ -1,0 +1,87 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "✨ Apps";
+    drun-display-format: "{icon} {name}";
+}
+
+* {
+    /* Variables de color y cristal */
+    background: rgba(0, 0, 0, 0.4);
+    background-alt: rgba(255, 255, 255, 0.1);
+    foreground: #ffffff;
+    accent: rgba(51, 204, 255, 0.5); /* Azul Frutiger */
+    border-color: rgba(0, 255, 153, 0.6); /* Verde menta */
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 450px;
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: @border-color;
+    background-color: @background;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 15px;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @background-alt;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 0 10px 0 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Buscar...";
+    placeholder-color: rgba(255, 255, 255, 0.4);
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 7;
+    spacing: 4px;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+element.selected {
+    background-color: @accent;
+    text-color: #ffffff;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 24px;
+    margin: 0 10px 0 0;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
